@@ -66,6 +66,7 @@ public class WreckBeachTest {
         assertEquals(7, WreckBeach.maxStamina(stair, stamina));
     }
 
+
     @Test(expected = InsufficientStaminaException.class)
     public void test9() throws InsufficientStaminaException {
         int     stamina = 12;
