@@ -13,7 +13,6 @@ public class WreckBeach {
 
     private static int findStamina(int[] stair, int index, int stamina){
         if(index >= stair.length) {
-            System.out.println(stamina);
             return stamina;
         }
         if(index==stair.length-2){
@@ -22,7 +21,7 @@ public class WreckBeach {
             return Math.max(normal,big);
         }
         if(index==stair.length-1){
-            int a= Math.min(1,stair[index]); //pick the smallest of doing these
+            int a= Math.min(1,stair[index]); //pick the smallest of doing these--> if you only have one step, you can just skip that and lose 1 or you can lose that
             return stamina-a;
         }
 
